@@ -28,13 +28,13 @@ This script will call Guppy for each file in the FAST5 directory. In other words
 
 
 ## Implementation
-* Create sub directory for each .fast5 file
-*     Guppy takes as input a directory of .fast5 files, meaning that it cannot be given the path to an individual file. To call Guppy on individual files, the script first creates a sub-directory for each .fast5 file.
-* Create a file link
-*     The sub directory should contain the .fast5 file, but copying all this data would be a waste of time and space on the drive. Therfore, the sub directories contain a link to its respective .fast5 file. This method also avoids errors that could occur if trying to move all of the data. 
-* Call Guppy
-*   The script then calls guppy, passing the subdirectory as the input and save space
-*   It is up to the user to specify the flowcell and kit so that Guppy will use the correct model.
+1. Create sub directory for each .fast5 file
+  * Guppy takes as input a directory of .fast5 files, meaning that it cannot be given the path to an individual file. To call Guppy on individual files, the script first creates a sub-directory for each .fast5 file.
+2. Create a file link
+  * The sub directory should contain the .fast5 file, but copying all this data would be a waste of time and space on the drive. Therfore, the sub directories contain a link to its respective .fast5 file. This method also avoids errors that could occur if trying to move all of the data. 
+3. Call Guppy
+  * The script then calls guppy, passing the subdirectory as the input and save space
+  * It is up to the user to specify the flowcell and kit so that Guppy will use the correct model.
 
 
 
